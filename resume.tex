@@ -1,0 +1,134 @@
+\documentclass{res}
+\setlength{\topmargin}{-0.6in}
+\setlength{\textheight}{9.8in}
+\setlength{\headsep}{0.2in}
+\setlength{\headheight}{12pt}
+\usepackage{fancyhdr}
+\renewcommand{\headrulewidth}{0pt}
+\lhead{\hspace*{-\sectionwidth}Brenda Baud}
+\rhead{Page \thepage}
+\cfoot{}
+\pagestyle{fancy}
+
+% hyperlinks
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=blue}
+
+% spacing
+\usepackage{setspace}
+\onehalfspacing
+
+% phone number sybols
+\def\Plus{\texttt{+}}
+\def\Minus{\texttt{-}}
+
+\begin{document}
+\thispagestyle{empty}
+\centerline{Carlos Manuel Gomes Vilhena}
+\vspace{0.1in}
+\centerline{\href{mailto:carlosvilhena@gmail.com}{carlosvilhena@gmail.com}}
+\centerline{\Plus 44 (0) 74 13 59 3 36}
+\centerline{\href{http://github.com/carvil}{github} \hspace{0.5 cm}
+\href{http://carvil.github.com/}{blog}  \hspace{0.5 cm}
+\href{http://www.linkedin.com/in/carlosvilhena}{linkedin}  \hspace{0.5 cm}
+\href{http://www.twitter.com/carvil_}{twitter}
+}
+
+
+\begin{resume}
+\vspace{0.1in}
+
+
+\section{EMPLOYMENT SUMMARY}
+\vspace{0.1in}
+  {\bf August 2011 \Minus\, Present}\\
+  {\bf Senior Software Engineer, Digital Science, London, UK}
+    \begin{itemize} % Use \item[] to prevent a bullet from appearing
+      \item[] I have been working on the central department, building both
+      applications and infrastructure automation tools. I authored and worked
+      in several different projects, from which I highlight:
+        \begin{itemize}
+        \item User management and authentication \href{https://auth.digital-science.com/}{system} \Minus a central user management
+        system built using Ruby on Rails, which acts as an OAuth 2 provider for
+        our products/applications. It holds user details, subscription data and
+        an admin view to check statistics on user signups, oauth2 application
+        tokens, API tokens, among other things;
+        \item Internal web application for deployments and AWS instance management \Minus rails application with an ember.js front-end and connections to Jenkins and the Github API;
+        \item A server orchestration tool (ruby \href{https://rubygems.org/gems/baton}{gem} and blog \href{http://www.digital-science.com/blog/posts/presenting-baton}{post}) – an asynchronous tool based on RabbitMQ and EventMachine that was the base for building a custom deployment tool;
+        \item A RESTful API built on top of Sinatra with a Riak backend, which exposes metadata from scientific articles processed by a processing pipeline; the API is then used in visualization tools being developed internally using D3.js;
+        \item Article metadata extraction \Minus I worked on the first version of our pipeline which extracts metadata from several different journals and performs disambiguation. This was mainly done in Python and RabbitMQ for process communication;
+        \item New version of the \href{http://altmetric.com}{Altmetric} processing pipeline \Minus a distributed application using twitter’s Storm to process tweets and perform several calculations ranging from simple counting of hashtags to web scraping for scientific metadata;
+        \item Front-end dashboard for the pipeline above \Minus displays several D3.js visualisations of the data collected on top of Rails (top domains, tweets containing scientific content, among others);
+        \item Bookmarklet for \href{http://www.altmetric.com/bookmarklet.php}{Altmetric}, which displays social information regarding articles (number of tweets, blog posts, etc). This was done using the Rails asset pipeline;
+        \item MVP for a grants’ analytics tool \Minus processing pipeline to process different grants’ formats into a common format and a set of D3.js visualisations to explore the data (on top of Rails);
+        \item Several private ruby gems: omniauth extensions, guard extensions (monitor FTP directories), asynchronous data collectors for a dashboard (fetch data from twitter, campfire, deployments, etc), wrappers for saasy and chargify’s payment services, among others;
+        \item Several chef recipes for all the products mentioned above and necessary software stack \Minus we have a fully programmable and automated infrastructure;
+        \item Browser tracking extensions to track scholarly browser content (chrome extension).
+        \end{itemize}
+      Besides, I have been responsible for code review, best practices such as code standards, good documentation, how to create Hypermedia APIs and finally interviewing new candidates.
+
+      In terms of technologies, I have been working with:
+      \begin{itemize}
+        \item[] {\bf Languages/Frameworks/APIs} ruby (1.9.x), jruby (1.7.0), python, rails (3.x.x), sinatra, eventmachine, amqp, resque, coffeescript, javascript (jquery, ember.js, handlebars.js, d3.js, etc), twitter bootstrap, google chrome api, oauth2, Storm
+        \item[] {\bf Messaging} RabbitMQ
+        \item[] {\bf DBs/stores} mysql, riak, redis
+        \item[] {\bf Tools/Infrastructure} AWS (EC2, S3), chef, git and github, jenkins, rbenv, travis-ci
+        \item[] {\bf OSs} mac os x, linux (ubuntu)
+        \item[] {\bf Testing} rspec, capybara, jasmine, cucumber
+      \end{itemize}
+
+      \end{itemize}
+  {\bf January 2011 \Minus\, August 2011}\\
+  {\bf Software Developer, Mobile Interactive Group, London, UK}
+       \begin{itemize}
+        \item[] During my employment at MIG, I have been mainly working with Ruby technologies developing both backend RESTful APIs and frontend applications, from which I highlight:
+          \begin{itemize}
+          \item A mobile site with a RESTful Rails API to present rewards to customers of a well-known mobile operator with data exchange functionality;
+          \item A backend Sinatra application that acts as a proxy between a number of RESTful APIs and an operator’s SOAP API.
+          \end{itemize}
+
+        Besides the systems mentioned above, I have been working with many other systems, mainly solving production problems and improve system’s availability by fixing/enhancing the existing functionality. Technology wise, I used ruby (1.8.7, EE and 1.9.x), rails (2.x and 3.x), sinatra, mysql, web stack (html, css, javascript), perl, RVM.
+    \end{itemize}
+
+  {\bf Sep 2008 \Minus\, December 2010}\\
+  {\bf Software Developer, Danske Bank, Denmark}
+        \begin{itemize}
+        \item[] I worked as a Software Developer on two highly critical and highly transactional systems, namely E- banking and card systems. I have worked with both client-side and server-side applications, developing new functionalities and improving existing functionalities in large scale, high availability banking applications to support millions of transactions per hour.
+
+        I was involved in a number of projects and tasks (e.g. payment systems, swift transactions, agreements and invoicing systems), completing the full development lifecycle from preliminary analysis and design to implementation and deployment.
+       \end{itemize}
+
+  {\bf Sep 2007 \Minus\, December 2010}\\
+  {\bf Software Developer and Researcher for \href{http://www.overturetool.org}{The Overture Tool}, open source community}
+        \begin{itemize}
+        \item[] My work consisted in enabling the automatic conversion of VDM++ specifications into Java Modelling Language Specifications. In terms of technologies, I developed mainly with core Java (J2SE), Eclipse IDE, Eclipse plug-ins, Eclipse RCP, maven (build manager), VDM++, VDM-SL (functional language), Java Modelling Language, ANTLR for parser generation, design patterns such as the Visitor Pattern, deep language manipulation and representation (experience with abstract syntax trees), semantic analysis, formal modelling, unit and combinatorial testing, among others.
+       \end{itemize}
+
+  {\bf Oct 2007 \Minus\, Apr 2008}\\
+  {\bf Software Developer, Callis ApS, Denmark}
+        \begin{itemize}
+        \item[] I helped building web-based applications for integrating organisational processes with process improvement approaches such as CMMI.
+During my employment, I worked with JavaScript (ext-js), HTML, CSS, Oxygen, Eclipse for the client- side application, XML, XSD and XSLT for the data management and finally SVN.
+        \end{itemize}
+
+\section{EDUCATION}
+\vspace{0.1in}
+
+    {\bf Master in Computer Science}\\
+    Minho University (Portugal) and Engineering College of Aarhus (Denmark), 2006 \Minus 2008\\
+    \Minus Thesis: \href{http://wiki.overturetool.org/images/4/44/ConnectingVDMppJML.pdf}{Connecting Between VDM++ and Java Modelling Language}\\
+    \Minus Area: Formal Methods, Formal Modelling, Object Oriented programming\\
+    \Minus Publications: Achieved one \href{http://www.cs.ncl.ac.uk/publications/trs/papers/1099.pdf}{publication} at the international conference Formal Methods 2008, Turku, Finland
+
+    {\bf Bachelor in Computer Science}\\
+    Minho University (Portugal), 2001 \Minus 2006\\
+    \Minus The program has a high focus on mathematics, functional programming using Haskell (language fundamentals, lambda calculus, logic, concurrency, etc), object-oriented programming using Java, procedural programming using C, among other topics.
+
+
+\section{OPEN SOURCE CONTRIBUTIONS AND PERSONAL PROJECTS}
+\vspace{0.1in}
+
+    I have open sourced around 20 open source projects, ranging from small libraries to web applications in several programming languages. Besides, I have also contributed to almost 10 open source projects by committing code, raising issues or updating documentation. I have also participated in some programming competitions such as Rails Rumble 2012. This can all be found in my github account.
+
+\end{resume}
+\end{document}
