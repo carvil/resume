@@ -6,7 +6,6 @@
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt}
 \lhead{\hspace*{-\sectionwidth}Carlos Vilhena}
-\rhead{Page \thepage}
 \lfoot{\hspace*{-\sectionwidth}\textit{Generated with LaTeX}}
 \pagestyle{fancy}
 
@@ -29,7 +28,8 @@
 \centerline{\href{mailto:carlosvilhena@gmail.com}{carlosvilhena@gmail.com}}
 \centerline{\Plus 44 (0) 74 13 59 13 36}
 \centerline{\href{http://github.com/carvil}{github} \hspace{0.5 cm}
-\href{http://carvil.github.com/}{blog}  \hspace{0.5 cm}
+\href{http://www.carlosvilhena.com}{blog}  \hspace{0.5 cm}
+\href{http://carvil.github.com/}{tech blog}  \hspace{0.5 cm}
 \href{http://www.linkedin.com/in/carlosvilhena}{linkedin}  \hspace{0.5 cm}
 \href{http://www.twitter.com/carvil_}{twitter}
 }
@@ -41,10 +41,55 @@
 
 \section{EMPLOYMENT SUMMARY}
 \vspace{0.1in}
-  {\bf August 2011 \Minus Present}\\
+  {\bf July 2013 \Minus Present}\\
+  {\bf Senior Software Engineer, Forward Partners UK, London, UK}
+    \begin{itemize} % Use \item[] to prevent a bullet from appearing
+      \item[] At Forward Partners, I have been working with a number of different
+        startups at different stages of their growth, from early stage companies
+        up to companies on their series A funding round.
+      \item[] During my employment, I have been advising startups such as
+        snaptrip.com and driftrock.com on the technical side, I helped
+        accelerating the development of companies such as appearhere.co.uk
+        and I have been the technical co-founder of parcelbright.co.uk up until
+        now, a company focusing on smart parcel delivery for businesses.
+      \item[] Up until now, I have witnessed some companies that didn't succeed,
+        and I have helped and have seen many others succeed throughout their
+        early stages to the series A.
+    \end{itemize}
+
+  {\bf April 2013 \Minus June 2013}\\
+  {\bf Senior Software Engineer, Listora, London, UK}
+    \begin{itemize} % Use \item[] to prevent a bullet from appearing
+      \item[] I worked on the backend infrastructure of an events listing site,
+      where I developed:
+      \begin{itemize}
+        \item Backend services in Clojure responsible for parsing XML feeds and
+        producing events and venues which would then be added to a RabbitMQ
+        queue for further processing (Clojure was used for performance reasons,
+        given the size of the XML files);
+        \item Backend services in Ruby, which would aggregate the events and
+        venues from the Clojure processes, store them in a database for future
+        use and message them across to the main application;
+        \item The front-end application, in Ruby on Rails, where the events and
+        venues would be consumed, stored and presented. The site's search
+        engine was supported by ElasticSearch.
+      \end{itemize}
+      In terms of technologies, I worked with:
+      \begin{itemize}
+        \item[] {\bf Languages/Frameworks/APIs:} ruby (1.9.x and 2.x.x), rails
+          (4.x.x), amqp, coffeescript, javascript
+        \item[] {\bf Messaging:} rabbitmq
+        \item[] {\bf DBs/stores:} postgresql
+        \item[] {\bf Tools/Infrastructure:} heroku, travis-ci, git and github
+        \item[] {\bf OSs:} mac osx
+        \item[] {\bf Testing:} rspec, capybara, cucumber
+      \end{itemize}
+    \end{itemize}
+
+  {\bf August 2011 \Minus March 2013}\\
   {\bf Senior Software Engineer, Digital Science, London, UK}
     \begin{itemize} % Use \item[] to prevent a bullet from appearing
-      \item[] I have been working on the central department, building both
+      \item[] I worked on the central department, building both
       applications and infrastructure automation tools. I authored and worked
       in several different projects, from which I highlight:
         \begin{itemize}
@@ -67,7 +112,7 @@
         \end{itemize}
       Besides, I have been responsible for code review, best practices such as code standards, good documentation, how to create Hypermedia APIs and finally interviewing new candidates.
 
-      In terms of technologies, I have been working with:
+      In terms of technologies, I worked with:
       \begin{itemize}
         \item[] {\bf Languages/Frameworks/APIs:} ruby (1.9.x), jruby (1.7.0), python, rails (3.x.x), sinatra, eventmachine, amqp, resque, coffeescript, javascript (jquery, ember.js, handlebars.js, d3.js, etc), twitter bootstrap, google chrome api, oauth2, storm
         \item[] {\bf Messaging:} rabbitmq
