@@ -6,7 +6,6 @@
 \usepackage{fancyhdr}
 \renewcommand{\headrulewidth}{0pt}
 \lhead{\hspace*{-\sectionwidth}Carlos Vilhena}
-\lfoot{\hspace*{-\sectionwidth}\textit{Generated with LaTeX}}
 \pagestyle{fancy}
 
 % hyperlinks
@@ -25,15 +24,15 @@
 \thispagestyle{empty}
 \centerline{Carlos Manuel Gomes Vilhena}
 \vspace{0.1in}
-\centerline{\href{mailto:carlosvilhena@gmail.com}{carlosvilhena@gmail.com}}
-\centerline{\Plus 44 (0) 74 13 59 13 36}
-\centerline{\href{http://github.com/carvil}{github} \hspace{0.5 cm}
-\href{http://www.carlosvilhena.com}{blog}  \hspace{0.5 cm}
-\href{http://carvil.github.com/}{tech blog}  \hspace{0.5 cm}
-\href{http://www.linkedin.com/in/carlosvilhena}{linkedin}  \hspace{0.5 cm}
-\href{http://www.twitter.com/carvil_}{twitter}
+\centerline{
+  \href{mailto:carlosvilhena@gmail.com}{carlosvilhena@gmail.com}
 }
-
+\centerline{\Plus 44 (0) 74 13 59 13 36}
+\centerline{
+  \href{http://github.com/carvil}{github} \hspace{0.5 cm}
+  \href{http://www.linkedin.com/in/carlosvilhena}{linkedin}  \hspace{0.5 cm}
+  \href{http://www.twitter.com/carvil_}{twitter}
+}
 
 \begin{resume}
 \vspace{0.1in}
@@ -41,18 +40,49 @@
 
 \section{EMPLOYMENT SUMMARY}
 \vspace{0.1in}
-  {\bf July 2013 \Minus Present}\\
+  {\bf November 2013 \Minus Present}\\
+  {\bf Co-Founder and CTO, ParcelBright, London, UK}
+    \begin{itemize}
+      \item[] I started \href{https://www.parcelbright.com/}{ParcelBright} as
+        the lead developer building the initial proof of concept product and
+        taking ownership of product development and hires.
+      \item[] I built several integrations with 3rd party courier company
+        APIs ranging from legacy APIs using XML and SOAP technologies, to
+        systems where no HTTP APIs were available (reading/writing files to
+        SFTPs, etc). I then aggregated these integrations into a single
+        courier \href{https://github.com/parcelbright/api-docs}{API} provided by
+        ParcelBright, with a modern HTTP interface.
+      \item[] I also built the front-end website that allows most of our
+        customers to book shipping labels and manage their entire orders. This
+        sits on top of our API, using it to communicate with our partners.
+      \item[] After our seed round, I expanded the tech and support teams
+        and made sure we could scale the business product and tech-wise.
+      \item[] Finally, I have been involved with customer interviews, meetings
+        with partners and investors and most aspects of the business.
+      \item[] In terms of technologies, I worked with:
+      \begin{itemize}
+        \item[] {\bf Languages/Frameworks/APIs:} ruby (2.x.x), rails
+          (4.x.x), clojure, coffeescript, javascript, ember.js and CSS (SASS)
+        \item[] {\bf DBs/stores:} postgresql, redis and elasticsearch
+        \item[] {\bf Tools/Infrastructure:} heroku, travis-ci, git, github and
+          AWS
+        \item[] {\bf OSs:} mac osx and linux
+        \item[] {\bf Testing:} rspec, capybara, cucumber and midje
+      \end{itemize}
+    \end{itemize}
+
+  {\bf July 2013 \Minus September 2014}\\
   {\bf Senior Software Engineer, Forward Partners UK, London, UK}
-    \begin{itemize} % Use \item[] to prevent a bullet from appearing
-      \item[] At Forward Partners, I have been working with a number of different
+    \begin{itemize}
+      \item[] At Forward Partners, I worked with a number of different
         startups at different stages of their growth, from early stage companies
         up to companies on their series A funding round.
-      \item[] During my employment, I have been advising startups such as
+      \item[] During my employment, I advised startups such as
         snaptrip.com and driftrock.com on the technical side, I helped
         accelerating the development of companies such as appearhere.co.uk
-        and I have been the technical co-founder of parcelbright.co.uk, a
+        and I have been the technical co-founder of ParcelBright, a
         company focusing on smart parcel delivery for businesses.
-      \item[] Up until now, I have witnessed both successes and some failures.
+      \item[] Up until now, I witnessed both successes and some failures.
         This experience gave me a solid understanding of how to help startups
         avoiding common pitfalls and therefore help them get to where they
         need to be.
@@ -70,7 +100,7 @@
 
   {\bf April 2013 \Minus June 2013}\\
   {\bf Senior Software Engineer, Listora, London, UK}
-    \begin{itemize} % Use \item[] to prevent a bullet from appearing
+    \begin{itemize}
       \item[] I worked on the backend infrastructure of an events listing site,
       where I developed:
       \begin{itemize}
@@ -100,7 +130,7 @@
 
   {\bf August 2011 \Minus March 2013}\\
   {\bf Senior Software Engineer, Digital Science, London, UK}
-    \begin{itemize} % Use \item[] to prevent a bullet from appearing
+    \begin{itemize}
       \item[] I worked on the central department, building both
       applications and infrastructure automation tools. I authored and worked
       in several different projects, from which I highlight:
@@ -113,16 +143,11 @@
         \item Internal web application for deployments and AWS instance management \Minus rails application with an ember.js front-end and connections to Jenkins and the Github API;
         \item A server orchestration tool (ruby \href{https://rubygems.org/gems/baton}{gem} and blog \href{http://www.digital-science.com/blog/posts/presenting-baton}{post}) – an asynchronous tool based on RabbitMQ and EventMachine that was the base for building a custom deployment tool;
         \item A RESTful API built on top of Sinatra with a Riak backend, which exposes metadata from scientific articles processed by a processing pipeline; the API is then used in visualization tools being developed internally using D3.js;
-        \item Article metadata extraction \Minus I worked on the first version of our pipeline which extracts metadata from several different journals and performs disambiguation. This was mainly done in Python and RabbitMQ for process communication;
         \item New version of the \href{http://altmetric.com}{Altmetric} processing pipeline \Minus a distributed application using twitter’s Storm to process tweets and perform several calculations ranging from simple counting of hashtags to web scraping for scientific metadata;
         \item Front-end dashboard for the pipeline above \Minus displays several D3.js visualisations of the data collected on top of Rails (top domains, tweets containing scientific content, among others);
-        \item Bookmarklet for \href{http://www.altmetric.com/bookmarklet.php}{Altmetric}, which displays social information regarding articles (number of tweets, blog posts, etc). This was done using the Rails asset pipeline;
         \item MVP for a grants’ analytics tool \Minus processing pipeline to process different grants’ formats into a common format and a set of D3.js visualisations to explore the data (on top of Rails);
-        \item Several private ruby gems: omniauth extensions, guard extensions (monitor FTP directories), asynchronous data collectors for a dashboard (fetch data from twitter, campfire, deployments, etc), wrappers for saasy and chargify’s payment services, among others;
-        \item Several chef recipes for all the products mentioned above and necessary software stack \Minus we have a fully programmable and automated infrastructure;
-        \item Browser tracking extensions to track scholarly browser content (chrome extension).
         \end{itemize}
-      Besides, I have been responsible for code review, best practices such as code standards, good documentation, how to create Hypermedia APIs and finally interviewing new candidates.
+      Besides, I was responsible for code review, best practices such as code standards, good documentation, how to create Hypermedia APIs and finally interviewing new candidates.
 
       In terms of technologies, I worked with:
       \begin{itemize}
@@ -138,19 +163,19 @@
   {\bf January 2011 \Minus August 2011}\\
   {\bf Software Developer, Mobile Interactive Group, London, UK}
        \begin{itemize}
-        \item[] During my employment at MIG, I have been mainly working with Ruby technologies developing both backend RESTful APIs and frontend applications, from which I highlight:
+        \item[] During my employment at MIG, I was mainly working with Ruby technologies developing both backend RESTful APIs and frontend applications, from which I highlight:
           \begin{itemize}
           \item A mobile site with a RESTful Rails API to present rewards to customers of a well-known mobile operator with data exchange functionality;
           \item A backend Sinatra application that acts as a proxy between a number of RESTful APIs and an operator’s SOAP API.
           \end{itemize}
 
-        Besides the systems mentioned above, I have been working with many other systems, mainly solving production problems and improve system’s availability by fixing/enhancing the existing functionality. Technology wise, I used ruby (1.8.7, EE and 1.9.x), rails (2.x and 3.x), sinatra, mysql, web stack (html, css, javascript), perl, RVM.
+        Besides the systems mentioned above, I worked with many other systems, mainly solving production problems and improve system’s availability by fixing/enhancing the existing functionality. Technology wise, I used ruby (1.8.7, EE and 1.9.x), rails (2.x and 3.x), sinatra, mysql, web stack (html, css, javascript), perl, RVM.
     \end{itemize}
 
   {\bf Sep 2008 \Minus December 2010}\\
   {\bf Software Developer, Danske Bank, Denmark}
         \begin{itemize}
-        \item[] I worked as a Software Developer on two highly critical and highly transactional systems, namely ebanking and card systems. I have worked with both client-side and server-side applications, developing new functionalities and improving existing functionalities in large scale, high availability banking applications to support millions of transactions per hour.
+        \item[] I worked as a Software Developer on two highly critical and highly transactional systems, namely ebanking and card systems. I worked with both client-side and server-side applications, developing new functionalities and improving existing functionalities in large scale, high availability banking applications to support millions of transactions per hour.
 
         I was involved in a number of projects and tasks (e.g. payment systems, swift transactions, agreements and invoicing systems), completing the full development lifecycle from preliminary analysis and design to implementation and deployment.
        \end{itemize}
@@ -193,13 +218,5 @@ During my employment, I worked with JavaScript (ext-js), HTML, CSS, Oxygen, Ecli
         \item Other Computer Science topics such as operating systems, computer architecture, networks, etc.
       \end{itemize}
     \end{itemize}
-
-\section{OPEN SOURCE CONTRIBUTIONS AND PERSONAL PROJECTS}
-\vspace{0.1in}
-
-    I have open sourced around 20 open source projects, ranging from small libraries to web applications in several programming languages (Ruby, Haskell, Java, C, Clojure, etc). Besides, I have also contributed to almost 10 open source projects by committing code, raising issues or updating documentation. Finally, I participated in some programming competitions such as Rails Rumble 2012.
-
-    This can all be found in my \href{http://github.com/carvil}{github} account.
-
 \end{resume}
 \end{document}
